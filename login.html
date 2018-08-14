@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+<head>">
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style1.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <form>
-        //the type dictates that the username must be 'text'
-        Username: <input type='text' /> <br>
-        //setting the type as 'password' obscures the user input
-        Password: <input type='password' /> <br>
-        <input type="checkbox"> Remember me <br/>
-        <button type="button">Login</button> 
+        Username: <input type='text' required placeholder="Your NameUser " pattern="[A-Z]"/> <br><br/>
+        Password: <input type='password' required placeholder="Password" pattern=".{6,8}" requierd title="Password must be between 6 and 8 characters"/> <br>
+        <input type="checkbox"> Remember me <br/><br/>
+        <!-- <button type="button">Login</button>  -->
+        <input type="submit" value="submit">
   </form>
 </body>
 </html>
